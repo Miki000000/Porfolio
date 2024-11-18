@@ -1,0 +1,19 @@
+{
+  "socialLinks": [
+    {
+      "title": "GitHub",
+      "href": "https://github.com/yourusername",
+      "icon": "Github"
+    },
+    {
+      "title": "LinkedIn",
+      "href": "https://linkedin.com/in/yourusername",
+      "icon": "Linkedin"
+    },
+    {
+      "title": "Email",
+      "href": "mailto:your@email.com",
+      "icon": "Mail"
+    }
+  ]
+} 

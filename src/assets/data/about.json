@@ -1,0 +1,14 @@
+{
+  "aboutLinks": [
+    {
+      "title": "Resume",
+      "href": "/resume",
+      "description": "View my professional experience"
+    },
+    {
+      "title": "Skills",
+      "href": "/skills",
+      "description": "Check out my technical skills"
+    }
+  ]
+} 

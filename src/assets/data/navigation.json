@@ -1,0 +1,33 @@
+{
+  "mainNav": [
+    {
+      "title": "Home",
+      "href": "/",
+      "icon": "Home"
+    },
+    {
+      "title": "Blog",
+      "icon": "BookOpen",
+      "submenu": [
+        {
+          "title": "Thoughts",
+          "href": "/blog/thoughts"
+        },
+        {
+          "title": "My Learning",
+          "href": "/blog/learning"
+        }
+      ]
+    },
+    {
+      "title": "All Projects",
+      "href": "/projects",
+      "icon": "FolderGit2"
+    },
+    {
+      "title": "About Me",
+      "href": "/about",
+      "icon": "User"
+    }
+  ]
+} 

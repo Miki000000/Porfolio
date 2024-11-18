@@ -1,0 +1,14 @@
+{
+  "projects": [
+    {
+      "title": "Project 1",
+      "href": "/project1",
+      "description": "Description of project 1"
+    },
+    {
+      "title": "Project 2",
+      "href": "/project2",
+      "description": "Description of project 2"
+    }
+  ]
+} 
