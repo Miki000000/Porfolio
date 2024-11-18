@@ -50,7 +50,7 @@ export function MainSidebar() {
   const [password, setPassword] = React.useState("")
   const [isLoading, setIsLoading] = React.useState(false)
 
-  const handleLogin = async (e: React.MouseEvent) => {
+  const handleLogin = async (_: React.MouseEvent) => {
     setIsLoginDialogOpen(true)
   }
 
