@@ -8,7 +8,7 @@ export function Home() {
       <section className="flex justify-between flex-col md:flex-row items-center gap-12 mb-16">
         <div className="flex-1 max-w-2xl">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            Hi, I'm ****!
+            Hi, I'm Vitor Hugo!
           </h1>
           <AnimatedText />
         </div>
