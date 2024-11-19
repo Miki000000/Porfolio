@@ -9,7 +9,6 @@ import {
 } from "@/components/ui/navigation-menu"
 import { SidebarTrigger } from "@/components/ui/sidebar"
 import { ThemeToggle } from "./theme-toggle"
-import { useIsMobile } from "@/hooks/use-mobile"
 
 const projectLinks = [
   {
@@ -56,8 +55,6 @@ const aboutLinks = [
 ]
 
 export function Topbar() {
-  const isMobile = useIsMobile()
-
   return (
     <header className="sticky w-full top-0 border-b px-4 py-2">
       <div className="flex items-center justify-between">
