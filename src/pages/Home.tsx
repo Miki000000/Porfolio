@@ -22,16 +22,24 @@ export function Home() {
       {/* Projects Section */}
       <section>
         <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8">Featured Projects</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-          {projectLinks.map((project) => (
-            <Card key={project.title} className="group hover:shadow-lg transition-shadow">
-              <CardContent className="p-4 md:p-6">
-                <div className="aspect-video bg-muted rounded-md mb-4" />
-                <h3 className="text-lg md:text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-sm md:text-base text-muted-foreground">{project.description}</p>
-              </CardContent>
-            </Card>
-          ))}
+        <div className="relative">
+          <div className="flex overflow-x-auto space-x-4 md:space-x-6 pb-4 
+            [&::-webkit-scrollbar]:h-2
+            [&::-webkit-scrollbar-track]:rounded-full
+            [&::-webkit-scrollbar-track]:bg-muted
+            [&::-webkit-scrollbar-thumb]:rounded-full
+            [&::-webkit-scrollbar-thumb]:bg-muted-foreground/20
+            [&::-webkit-scrollbar-thumb:hover]:bg-muted-foreground/30">
+            {projectLinks.map((project) => (
+              <Card key={project.title} className="flex-none w-[280px] md:w-[320px] group hover:shadow-lg transition-shadow">
+                <CardContent className="p-4 md:p-6">
+                  <div className="aspect-video bg-muted rounded-md mb-4" />
+                  <h3 className="text-lg md:text-xl font-semibold mb-2">{project.title}</h3>
+                  <p className="text-sm md:text-base text-muted-foreground">{project.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </section>
     </div>
