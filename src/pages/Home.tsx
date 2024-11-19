@@ -3,30 +3,32 @@ import { AnimatedText } from "@/components/AnimatedText"
 
 export function Home() {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto">
       {/* Hero Section */}
-      <section className="flex justify-between flex-col md:flex-row items-center gap-12 mb-16">
-        <div className="flex-1 max-w-2xl">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">
+      <section className="flex flex-col md:flex-row items-center justify-around gap-6 md:gap-12 mb-8 md:mb-16">
+        <div className="flex-1 max-w-2xl text-center md:text-left mb-8 md:mb-0">
+          <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4">
             Hi, I'm Vitor Hugo!
           </h1>
-          <AnimatedText />
+          <div className="h-[4.5rem] md:h-[4rem]">
+            <AnimatedText />
+          </div>
         </div>
-        <div className="w-80 h-80 md:w-96 md:h-96 bg-muted rounded-lg shrink-0">
+        <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-muted rounded-lg">
           {/* Placeholder for profile image */}
         </div>
       </section>
 
       {/* Projects Section */}
       <section>
-        <h2 className="text-3xl font-bold mb-8">Featured Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8">Featured Projects</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {projectLinks.map((project) => (
             <Card key={project.title} className="group hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
+              <CardContent className="p-4 md:p-6">
                 <div className="aspect-video bg-muted rounded-md mb-4" />
-                <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-muted-foreground">{project.description}</p>
+                <h3 className="text-lg md:text-xl font-semibold mb-2">{project.title}</h3>
+                <p className="text-sm md:text-base text-muted-foreground">{project.description}</p>
               </CardContent>
             </Card>
           ))}

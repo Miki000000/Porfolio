@@ -12,11 +12,11 @@ function App() {
       <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
         <SidebarProvider>
           <Router>
-            <div className="flex w-full">
+            <div className="flex min-h-screen w-full">
               <MainSidebar />
-              <div className="flex-1 flex flex-col">
+              <div className="flex-1 flex flex-col min-w-0">
                 <Topbar />
-                <main className="flex-1 bg-background p-4">
+                <main className="flex-1 bg-background p-4 md:p-6 lg:p-8">
                   <Routes>
                     <Route path="/" element={<Home />} />
                   </Routes>
